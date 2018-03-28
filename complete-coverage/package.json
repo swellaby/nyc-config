@@ -1,5 +1,5 @@
 {
-    "name": "@swellaby/nyc-config",
+    "name": "@swellaby/nyc-config-complete-coverage",
     "version": "0.0.1",
     "description": "Our nyc configuration for 100% code coverage",
     "main": "index.json",
@@ -7,7 +7,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/swellaby/nyc-config-complete-coverage"
+      "url": "https://github.com/swellaby/nyc-config.git"
     },
     "keywords": [
       "swellaby",
@@ -19,15 +19,16 @@
         "email": "opensource@swellaby.com",
         "url": "http://swellaby.com"
       },
-      "contributors": [
-        {
-          "name": "Caleb Cartwright",
-          "url": "https://github.com/calebcartwright"
-        }
-      ],
+    "contributors": [
+      {
+        "name": "Caleb Cartwright",
+        "url": "https://github.com/calebcartwright"
+      }
+    ],
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/swellaby/nyc-config/issues"
+      "url": "https://github.com/swellaby/nyc-config/issues",
+      "email": "opensource@swellaby.com"
     },
     "homepage": "https://github.com/swellaby/nyc-config#README"
   }
