@@ -1,34 +1,36 @@
 {
-    "name": "@swellaby/nyc-config-complete-coverage",
-    "version": "0.0.1",
-    "description": "Our nyc configuration for 100% code coverage",
-    "main": "index.json",
-    "scripts": {
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/swellaby/nyc-config.git"
-    },
-    "keywords": [
-      "swellaby",
-      "config",
-      "nyc"
-    ],
-    "author": {
-        "name": "Swellaby",
-        "email": "opensource@swellaby.com",
-        "url": "http://swellaby.com"
-      },
-    "contributors": [
-      {
-        "name": "Caleb Cartwright",
-        "url": "https://github.com/calebcartwright"
-      }
-    ],
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/swellaby/nyc-config/issues",
-      "email": "opensource@swellaby.com"
-    },
-    "homepage": "https://github.com/swellaby/nyc-config#README"
+  "name": "@swellaby/nyc-config-complete-coverage",
+  "version": "0.0.2",
+  "description": "Our nyc configuration for 100% code coverage",
+  "main": "index.json",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/nyc-config.git"
+  },
+  "keywords": [
+    "swellaby",
+    "config",
+    "nyc"
+  ],
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "contributors": [
+    {
+      "name": "Caleb Cartwright",
+      "url": "https://github.com/calebcartwright"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swellaby/nyc-config/issues",
+    "email": "opensource@swellaby.com"
+  },
+  "homepage": "https://github.com/swellaby/nyc-config#README",
+  "dependencies": {
+    "@swellaby/nyc-config": "0.0.2"
   }
+}

@@ -1,34 +1,34 @@
 {
-    "name": "@swellaby/nyc-config",
-    "version": "0.0.2",
-    "description": "Our default nyc configuration",
-    "main": "index.js",
-    "scripts": {
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/swellaby/nyc-config.git"
-    },
-    "keywords": [
-      "swellaby",
-      "config",
-      "nyc"
-    ],
-    "author": {
-        "name": "Swellaby",
-        "email": "opensource@swellaby.com",
-        "url": "http://swellaby.com"
-      },
-    "contributors": [
-      {
-        "name": "Caleb Cartwright",
-        "url": "https://github.com/calebcartwright"
-      }
-    ],
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/swellaby/nyc-config/issues",
-      "email": "opensource@swellaby.com"
-    },
-    "homepage": "https://github.com/swellaby/nyc-config#README"
-  }
+  "name": "@swellaby/nyc-config",
+  "version": "0.0.2",
+  "description": "Our default nyc configuration",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/nyc-config.git"
+  },
+  "keywords": [
+    "swellaby",
+    "config",
+    "nyc"
+  ],
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "contributors": [
+    {
+      "name": "Caleb Cartwright",
+      "url": "https://github.com/calebcartwright"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swellaby/nyc-config/issues",
+    "email": "opensource@swellaby.com"
+  },
+  "homepage": "https://github.com/swellaby/nyc-config#README"
+}
