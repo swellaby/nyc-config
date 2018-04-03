@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/nyc-config-complete-coverage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Our nyc configuration for 100% code coverage",
   "main": "index.js",
   "scripts": {},
@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/swellaby/nyc-config#README",
   "dependencies": {
-    "@swellaby/nyc-config": "0.0.3"
+    "@swellaby/nyc-config": "0.0.4"
   }
 }

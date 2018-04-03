@@ -4,9 +4,9 @@ Our base configuration for [nyc][nyc-pkg-url]. Geared for our specific needs, bu
 ## Configuration
 - `reporters`  
 Adds html, lcov, cobertura, text, and text-summary reporters
-- `cache`: true
-- `all`: true
-- `per-file`: true
+- `cache` : true
+- `all` : true
+- `per-file` : true
 
 ## License
 MIT - see license details [here][license-url]

@@ -4,11 +4,11 @@ Our [nyc][nyc-pkg-url] configuration for enforcing some reasonable minimal code 
 ## Configuration
 Extends our [base configuration][base-config-pkg-url] and adds:
 
-- `check-coverage`: true  
-- `lines`: 75
-- `statements`: 75
-- `functions`: 80
-- `branches`: 70
+- `check-coverage` : true  
+- `lines` : 75
+- `statements` : 75
+- `functions` : 80
+- `branches` : 70
 
 ## License
 MIT - see license details [here][license-url]

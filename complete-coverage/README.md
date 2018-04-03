@@ -4,11 +4,11 @@ Our [nyc][nyc-pkg-url] configuration for enforcing 100% code coverage. Geared fo
 ## Configuration
 Extends our [base configuration][base-config-pkg-url] and adds:
 
-- `check-coverage`: true  
-- `lines`: 100
-- `statements`: 100
-- `functions`: 100
-- `branches`: 100
+- `check-coverage` : true  
+- `lines` : 100
+- `statements` : 100
+- `functions` : 100
+- `branches` : 100
 
 ## License
 MIT - see license details [here][license-url]
