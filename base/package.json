@@ -12,7 +12,9 @@
   "keywords": [
     "swellaby",
     "config",
-    "nyc"
+    "nyc",
+    "nycconfig",
+    "nyc-config"
   ],
   "author": {
     "name": "Swellaby",
