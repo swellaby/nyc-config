@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/nyc-config-partial-coverage",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Our nyc configuration for partial code coverage levels",
   "main": "index.js",
   "scripts": {},
@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/swellaby/nyc-config#README",
   "dependencies": {
-    "@swellaby/nyc-config": "0.0.4"
+    "@swellaby/nyc-config": "0.0.5"
   }
 }
