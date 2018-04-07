@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/nyc-config",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Our default nyc configuration",
   "main": "index.js",
   "scripts": {

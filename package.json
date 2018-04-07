@@ -38,11 +38,16 @@
         "license:base": "rimraf base/LICENSE && ncp LICENSE base/LICENSE",
         "license:cc": "rimraf complete-coverage/LICENSE && ncp LICENSE complete-coverage/LICENSE",
         "license:pc": "rimraf partial-coverage/LICENSE && ncp LICENSE partial-coverage/LICENSE",
-        "version:base": "cd base && npm --no-git-tag-version version",
-        "version:cc": "cd complete-coverage && npm --no-git-tag-version version",
-        "version:pc": "cd partial-coverage && npm --no-git-tag-version version",
+        "version:base": "cd base && npm --no-git-tag-version version patch",
+        "version:cc": "cd complete-coverage && npm --no-git-tag-version version patch",
+        "version:pc": "cd partial-coverage && npm --no-git-tag-version version patch",
         "prepub:base": "npm run build:base && npm run license:base && npm run version:base",        
         "prepub:cc": "npm run build:cc && npm run license:cc && npm run version:cc",
-        "prepub:pc": "npm run build:pc && npm run license:pc && npm run version:pc"
+        "prepub:pc": "npm run build:pc && npm run license:pc && npm run version:pc",
+        "prepub:all": "npm run prepub:base && npm run prepub:cc && npm run prepub:pc",
+        "publish:base": "npm run prepub:base && cd base && npm publish",
+        "publish:cc": "npm run prepub:cc && cd complete-coverage && npm publish",
+        "publish:pc": "npm run prepub:pc && cd partial-coverage && npm publish",
+        "publish:all": "npm run publish:base && npm run publish:cc && npm run publish:pc"
     }
 }
