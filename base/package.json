@@ -4,6 +4,9 @@
   "description": "Our default nyc configuration",
   "main": "index.js",
   "scripts": {
+    "build": "cd .. && npm run build:base",
+    "lint": "cd .. && npm run lint:base",
+    "test": "cd .. && npm run test:base"
   },
   "repository": {
     "type": "git",

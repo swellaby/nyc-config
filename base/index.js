@@ -11,4 +11,4 @@ module.exports = {
     'cache': true,
     'all': true,
     'per-file': true
-}
+};

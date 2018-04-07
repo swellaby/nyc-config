@@ -1,0 +1,6 @@
+{
+    "reporterEnabled": "spec, xunit",
+    "xunitReporterOptions": {
+        "output": "partial-coverage/.testresults/xunit.xml"
+    }
+}

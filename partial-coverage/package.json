@@ -3,7 +3,11 @@
   "version": "0.0.5",
   "description": "Our nyc configuration for partial code coverage levels",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "cd .. && npm run build:pc",
+    "lint": "cd .. && npm run lint:pc",
+    "test": "cd .. && npm run test:pc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/swellaby/nyc-config.git"
@@ -33,6 +37,6 @@
   },
   "homepage": "https://github.com/swellaby/nyc-config#README",
   "dependencies": {
-    "@swellaby/nyc-config": "0.0.5"
+    "@swellaby/nyc-config": "^0.0.5"
   }
 }

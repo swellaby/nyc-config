@@ -1,0 +1,6 @@
+--ui tdd
+--timeout 10
+-R mocha-multi-reporters
+--reporter-options configFile=./partial-coverage/test/mocha-reporters.json
+--recursive
+./partial-coverage/test/**/*.js

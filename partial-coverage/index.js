@@ -7,4 +7,4 @@ module.exports = {
     'functions': 80,
     'branches': 70,
     'check-coverage': true
-}
+};
