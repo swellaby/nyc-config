@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/nyc-config-complete-coverage",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Our nyc configuration for 100% code coverage",
   "main": "index.js",
   "scripts": {
