@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/nyc-config-partial-coverage",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Our nyc configuration for partial code coverage levels",
   "main": "index.js",
   "scripts": {
