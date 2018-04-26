@@ -35,8 +35,8 @@
     "url": "https://github.com/swellaby/nyc-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/nyc-config#README",
+  "homepage": "https://github.com/swellaby/nyc-config/blobs/master/README",
   "dependencies": {
-    "@swellaby/nyc-config": "^1.0.0"
+    "@swellaby/nyc-config": "^1.0.2"
   }
 }
