@@ -1,7 +1,10 @@
 {
     "private": true,
-    "name": "@swellaby/nyc-configs",
+    "name": "@swellaby/nyc-config",
     "description": "Our nyc configuration modules",
+    "version": "0.0.7",
+    "license": "MIT",
+    "main": "index.js",
     "author": {
         "name": "Swellaby",
         "email": "opensource@swellaby.com",
@@ -13,22 +16,33 @@
             "url": "https://github.com/calebcartwright"
         }
     ],
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/swellaby/nyc-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/swellaby/nyc-config/issues",
+        "email": "opensource@swellaby.com"
+    },
+    "homepage": "https://github.com/swellaby/nyc-config/blob/master/README.md",
     "devDependencies": {
-        "@swellaby/eslint-config": "0.0.3",
+        "@swellaby/eslint-config": "^1.0.3",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "mocha": "^5.1.1",
-        "mocha-multi-reporters": "^1.1.7",
+        "mocha-multi": "^1.0.1",
         "ncp": "^2.0.0",
         "rimraf": "^2.6.2"
     },
     "scripts": {
         "build": "npm run lint && npm run test:all",
+        "lint": "eslint **/*.js",
+        "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
+        "prepublish:local": "npm --no-git-tag-version version patch",
+        "publish:local": "npm publish --access public",
         "build:base": "npm run lint:base && npm run test:base",
         "build:cc": "npm run lint:cc && npm run test:cc",
         "build:pc": "npm run lint:pc && npm run test:pc",
-        "lint": "eslint **/*.js",
         "lint:base": "eslint base/**/*.js",
         "lint:cc": "eslint complete-coverage/**/*.js",
         "lint:pc": "eslint partial-coverage/**/*.js",

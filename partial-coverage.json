@@ -1,0 +1,17 @@
+{
+    "reporter": [
+        "html",
+        "lcov",
+        "cobertura",
+        "text",
+        "text-summary"
+    ],
+    "cache": true,
+    "all": true,
+    "per-file": true,
+    "lines": 75,
+    "statements": 75,
+    "functions": 80,
+    "branches": 70,
+    "check-coverage": true
+}
