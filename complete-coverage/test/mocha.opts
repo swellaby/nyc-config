@@ -1,6 +1,0 @@
---ui tdd
---timeout 75
--R mocha-multi-reporters
---reporter-options configFile=./complete-coverage/test/mocha-reporters.json
---recursive
-./complete-coverage/test/**/*.js

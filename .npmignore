@@ -1,10 +1,9 @@
 *.tgz
 *.tar*
-test/
+.npm
+npm-debug.log*
 .testresults/
 .vscode/
-base/
-complete-coverage/
-partial-coverage/
+test/
 .eslintignore
 .eslintrc.js

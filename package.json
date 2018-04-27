@@ -1,8 +1,7 @@
 {
-    "private": true,
     "name": "@swellaby/nyc-config",
     "description": "Our nyc configuration modules",
-    "version": "0.0.7",
+    "version": "1.0.8",
     "license": "MIT",
     "main": "index.js",
     "author": {
@@ -31,38 +30,14 @@
         "eslint": "^4.19.1",
         "mocha": "^5.1.1",
         "mocha-multi": "^1.0.1",
-        "ncp": "^2.0.0",
         "rimraf": "^2.6.2"
     },
     "scripts": {
-        "build": "npm run lint && npm run test:all",
+        "build": "npm run lint && npm run test",
         "lint": "eslint **/*.js",
         "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
-        "prepublish:local": "npm --no-git-tag-version version patch",
-        "publish:local": "npm publish --access public",
-        "build:base": "npm run lint:base && npm run test:base",
-        "build:cc": "npm run lint:cc && npm run test:cc",
-        "build:pc": "npm run lint:pc && npm run test:pc",
-        "lint:base": "eslint base/**/*.js",
-        "lint:cc": "eslint complete-coverage/**/*.js",
-        "lint:pc": "eslint partial-coverage/**/*.js",
-        "test:all": "npm run test:base && npm run test:cc && npm run test:pc",
-        "test:base": "rimraf base/.testresults/ && mocha --opts base/test/mocha.opts",
-        "test:cc": "rimraf complete-coverage/.testresults && mocha --opts complete-coverage/test/mocha.opts",
-        "test:pc": "rimraf partial-coverage/.testresults && mocha --opts partial-coverage/test/mocha.opts",
-        "license:base": "rimraf base/LICENSE && ncp LICENSE base/LICENSE",
-        "license:cc": "rimraf complete-coverage/LICENSE && ncp LICENSE complete-coverage/LICENSE",
-        "license:pc": "rimraf partial-coverage/LICENSE && ncp LICENSE partial-coverage/LICENSE",
-        "version:base": "cd base && npm --no-git-tag-version version patch",
-        "version:cc": "cd complete-coverage && npm --no-git-tag-version version patch",
-        "version:pc": "cd partial-coverage && npm --no-git-tag-version version patch",
-        "prepub:base": "npm run build:base && npm run license:base && npm run version:base",
-        "prepub:cc": "npm run build:cc && npm run license:cc && npm run version:cc",
-        "prepub:pc": "npm run build:pc && npm run license:pc && npm run version:pc",
-        "prepub:all": "npm run prepub:base && npm run prepub:cc && npm run prepub:pc",
-        "publish:base": "npm run prepub:base && cd base && npm publish",
-        "publish:cc": "npm run prepub:cc && cd complete-coverage && npm publish",
-        "publish:pc": "npm run prepub:pc && cd partial-coverage && npm publish",
-        "publish:all": "npm run publish:base && npm run publish:cc && npm run publish:pc"
+        "version:tagless": "npm --no-git-tag-version version patch",
+        "prepublish:local": "npm run build && npm run version:tagless",
+        "publish:local": "npm publish --access public"
     }
 }
