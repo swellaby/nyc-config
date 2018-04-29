@@ -1,9 +1,11 @@
 *.tgz
 *.tar*
+**/*.tar*
 .npm
 npm-debug.log*
 .testresults/
 .vscode/
+.circleci/
 test/
 .eslintignore
 .eslintrc.js
