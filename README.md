@@ -1,5 +1,6 @@
 # nyc-config
 [![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url]
+[![npmjs Badge][npmjs-downloads-badge]][npmjs-pkg-url]
 [![Circle CI Badge][circle-ci-badge]][circle-ci-url]
 [![license Badge][license-badge]][license-url]  
 
@@ -12,7 +13,7 @@ npm i @swellaby/nyc-config --save-dev
 ```
 
 ## Usage
-Add an `extends` key to your [nyc config file][nyc-config-url] and specify the value of the configuration you want to use:
+Add an `extends` key to your [nyc config file][nyc-config-file-url] and specify the value of the configuration you want to use:
 
 For example, to use our default nyc configuration add the following to your `.nycrc` file:
 ```json
@@ -33,7 +34,7 @@ Our base configuration defines a couple core configuration settings:
 - **all** -  true
 - **per-file** - true
 
-You can utilize our base configuration by adding an `extends` key to your [nyc config file][nyc-config-url] and specifying the value of `@swellaby/nyc-config/base`. For example:
+You can utilize our base configuration by adding an `extends` key to your [nyc config file][nyc-config-file-url] and specifying the value of `@swellaby/nyc-config/base`. For example:
 ```json
 {
     ...
@@ -50,7 +51,7 @@ Our complete coverage configuration enforces 100% code coverage. It is the defau
 - **functions** - 100
 - **branches** - 100
 
-This config will be used by adding the config value to the `extends` key in your [nyc config file][nyc-config-url].
+This config will be used by adding the config value to the `extends` key in your [nyc config file][nyc-config-file-url].
 ```json
 {
     ...
@@ -91,10 +92,11 @@ MIT - see license details [here][license-url]
 
 [npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/nyc-config.svg
 [npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/nyc-config
+[npmjs-downloads-badge]: https://img.shields.io/npm/dt/@swellaby/nyc-config.svg
 [circle-ci-badge]: https://circleci.com/gh/swellaby/nyc-config.svg?style=shield
 [circle-ci-url]: https://circleci.com/gh/swellaby/nyc-config
 [license-url]: https://github.com/swellaby/nyc-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/nyc-config.svg
 [nyc-url]: https://www.npmjs.com/package/nyc
 [nyc-config-file-url]: https://www.npmjs.com/package/nyc#configuring-nyc
-[base-section]: #base-configuration
+[base-section]: ./README.md#base-configuration
