@@ -99,4 +99,4 @@ MIT - see license details [here][license-url]
 [license-badge]: https://img.shields.io/github/license/swellaby/nyc-config.svg
 [nyc-url]: https://www.npmjs.com/package/nyc
 [nyc-config-file-url]: https://www.npmjs.com/package/nyc#configuring-nyc
-[base-section]: ./README.md#base-configuration
+[base-section]: #base-configuration
