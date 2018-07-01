@@ -25,7 +25,8 @@
     },
     "homepage": "https://github.com/swellaby/nyc-config/blob/master/README.md",
     "devDependencies": {
-        "@swellaby/eslint-config": "^1.1.5",
+        "@swellaby/eslint-config": "^1.1.6",
+        "@swellaby/renovate-config": "^0.0.9",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "mocha": "^5.2.0",
@@ -39,5 +40,6 @@
         "version:tagless": "npm --no-git-tag-version version patch",
         "prepublish:local": "npm run build && npm run version:tagless",
         "publish:local": "npm publish --access public"
-    }
+    },
+    "dependencies": {}
 }
