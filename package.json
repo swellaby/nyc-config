@@ -39,5 +39,8 @@
         "version:tagless": "npm --no-git-tag-version version patch",
         "prepublish:local": "npm run build && npm run version:tagless",
         "publish:local": "npm publish --access public"
+    },
+    "dependencies": {
+        "@swellaby/renovate-config": "0.0.7"
     }
 }
