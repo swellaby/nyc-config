@@ -13,5 +13,12 @@
     "statements": 75,
     "functions": 80,
     "branches": 70,
-    "check-coverage": true
+    "check-coverage": true,
+    "report-dir": ".coverage",
+    "include": [
+        "src/**/*.js",
+        "lib/**/*.js",
+        "bin/**/*.js",
+        "tasks/**/*.js"
+    ]
 }
