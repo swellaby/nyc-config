@@ -29,10 +29,16 @@ For example, to use our default nyc configuration add the following to your `.ny
 ### base Configuration
 Our base configuration defines a couple core configuration settings:
 
-- **reporters** - html, lcov, cobertura, text, and text-summary
-- **cache** - true
-- **all** -  true
-- **per-file** - true
+- **reporters** - `html`, `lcov`, `cobertura`, `text`, and `text-summary`
+- **cache** - `true`
+- **all** -  `true`
+- **per-file** - `true`
+- **report-dir** - `.coverage/`
+- **include**:  
+    - `src/**/*.js`
+    - `lib/**/*.js`
+    - `bin/**/*.js`
+    - `tasks/**/*.js`
 
 You can utilize our base configuration by adding an `extends` key to your [nyc config file][nyc-config-file-url] and specifying the value of `@swellaby/nyc-config/base`. For example:
 ```json
@@ -45,11 +51,11 @@ You can utilize our base configuration by adding an `extends` key to your [nyc c
 
 ### Complete Coverage Configuration
 Our complete coverage configuration enforces 100% code coverage. It is the default configuration specified by this config module. It extends our [base configuration][base-section] with the following settings:
-- **check-coverage** - true
-- **lines** - 100
-- **statements** - 100
-- **functions** - 100
-- **branches** - 100
+- **check-coverage** - `true`
+- **lines** - `100`
+- **statements** - `100`
+- **functions** - `100`
+- **branches** - `100`
 
 This config will be used by adding the config value to the `extends` key in your [nyc config file][nyc-config-file-url].
 ```json
@@ -62,11 +68,11 @@ This config will be used by adding the config value to the `extends` key in your
 
 ### Partial Coverage Configuration 
 We also have a configuration that enforces code coverage levels with lower threshold levels. It similarly extends our [base configuration][base-section] but uses defines the following coverage levels:
-- **check-coverage** - true
-- **lines** - 75
-- **statements** - 75
-- **functions** - 80
-- **branches** - 70
+- **check-coverage** - `true`
+- **lines** - `75`
+- **statements** - `75`
+- **functions** - `80`
+- **branches** - `70`
 
 You can utilize our partial coverage configuration by adding an `extends` key to your [nyc config file][nyc-config-url] and specifying the value of `@swellaby/nyc-config/partial-coverage`. For example:
 ```json
