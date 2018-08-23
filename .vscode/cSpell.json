@@ -6,7 +6,10 @@
         "lcov",
         "npmjs",
         "nycrc",
-        "swellaby"
+        "opensource",
+        "swellaby",
+        "tagless",
+        "testresults"
     ],
     "flagWords": [
 
