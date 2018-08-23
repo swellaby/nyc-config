@@ -1,3 +1,14 @@
 {
-    
+    "version": "0.1",
+    "language": "en",
+    "words": [
+        "cobertura",
+        "lcov",
+        "npmjs",
+        "nycrc",
+        "swellaby"
+    ],
+    "flagWords": [
+
+    ]
 }

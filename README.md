@@ -27,7 +27,7 @@ For example, to use our default nyc configuration add the following to your `.ny
 ## nyc Configurations
 
 ### base Configuration
-Our base configuration defines a couple core configuration settings:
+Our base configuration defines a few core configuration settings:
 
 - **reporters** - `html`, `lcov`, `cobertura`, `text`, and `text-summary`
 - **cache** - `true`
