@@ -10,9 +10,9 @@ module.exports = {
     },
     coverageDirectory: '.coverage',
     includePaths: {
-        srcPath: 'src/**/*.js',
-        libPath: 'lib/**/*.js',
-        binPath: 'bin/**/*.js',
-        tasksPath: 'tasks/**/*.js',
+        srcPath: 'src/**/*',
+        libPath: 'lib/**/*',
+        binPath: 'bin/**/*',
+        tasksPath: 'tasks/**/*',
     }
 };

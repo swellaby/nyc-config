@@ -35,10 +35,10 @@ Our base configuration defines a few core configuration settings:
 - **per-file** - `true`
 - **report-dir** - `.coverage/`
 - **include**:  
-    - `src/**/*.js`
-    - `lib/**/*.js`
-    - `bin/**/*.js`
-    - `tasks/**/*.js`
+    - `src/**/*`
+    - `lib/**/*`
+    - `bin/**/*`
+    - `tasks/**/*`
 
 You can utilize our base configuration by adding an `extends` key to your [nyc config file][nyc-config-file-url] and specifying the value of `@swellaby/nyc-config/base`. For example:
 ```json
