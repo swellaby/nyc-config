@@ -1,7 +1,7 @@
 {
   "name": "@swellaby/nyc-config",
   "description": "Our nyc configuration modules",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "index.js",
   "author": {
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@swellaby/eslint-config": "^2.0.0",
     "chai": "^4.2.0",
-    "eslint": "^6.0.1",
-    "mocha": "^6.1.4",
+    "eslint": "^6.8.0",
+    "mocha": "^6.2.2",
     "mocha-multi-reporters": "^1.1.7",
     "rimraf": "^3.0.0"
   },
