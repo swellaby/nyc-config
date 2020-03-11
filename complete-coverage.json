@@ -14,11 +14,5 @@
   "functions": 100,
   "branches": 100,
   "check-coverage": true,
-  "report-dir": ".coverage",
-  "include": [
-    "src/**/*",
-    "lib/**/*",
-    "bin/**/*",
-    "tasks/**/*"
-  ]
+  "report-dir": ".coverage"
 }
