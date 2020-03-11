@@ -9,11 +9,5 @@
   "cache": true,
   "all": true,
   "per-file": true,
-  "report-dir": ".coverage",
-  "include": [
-    "src/**/*",
-    "lib/**/*",
-    "bin/**/*",
-    "tasks/**/*"
-  ]
+  "report-dir": ".coverage"
 }
