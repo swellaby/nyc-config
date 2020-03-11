@@ -51,12 +51,7 @@ suite('Complete Coverage configuration Suite:', () => {
         assert.deepEqual(config['report-dir'], utils.coverageDirectory);
     });
 
-    test('Should have correct set of include paths', () => {
-        const includePaths = config.include;
-        assert.deepEqual(includePaths.length, 4);
-        assert.isTrue(includePaths.includes(utils.includePaths.srcPath));
-        assert.isTrue(includePaths.includes(utils.includePaths.libPath));
-        assert.isTrue(includePaths.includes(utils.includePaths.binPath));
-        assert.isTrue(includePaths.includes(utils.includePaths.tasksPath));
+    test('Should not contain `include` key', () => {
+        assert.isUndefined(config.include);
     });
 });
