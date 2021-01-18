@@ -1,0 +1,44 @@
+name: pr
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: lint
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: set up node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - name: install dependencies
+        run: npm i
+      - name: run lint check
+        run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    name: test
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: set up node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - name: install dependencies
+        run: npm i
+      - name: run format check
+        run: npm test
+      - name: setup terstspace publishe
+        uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{github.repository_owner}}
+      - name: publish test results
+        run: testspace .testresults/xunit.xml
+        if: always()
